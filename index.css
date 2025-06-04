@@ -8,17 +8,22 @@ body
 
 h1
 {
-    color: blue;
+    color: yellow;
     font-size: 50px;
 }
 
 nav
 {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 button
 {
+    font-size: 30px;
     background-color: red;
     cursor: pointer;
     margin-right: 10px;
@@ -31,4 +36,54 @@ button
     max-width: 400px;
     color: black;
     margin: auto;
+}
+
+img
+{
+    height: auto;
+}
+
+/* Tablet styles */
+@media (max-width: 768px)
+{
+    h1
+    {
+        font-size: 40px;
+    }
+
+    button
+    {
+        font-size: 24px;
+        padding: 10px 12px;
+    }
+
+    #content
+    {
+        max-width: 300px;
+    }
+}
+
+/* Phone styles */
+@media (max-width: 600px)
+{
+    h1
+    {
+        font-size: 30px;
+    }
+
+    nav
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button
+    {
+        font-size: 20px;
+    }
+
+    #content
+    {
+        max-width: 200px;
+    }
 }
